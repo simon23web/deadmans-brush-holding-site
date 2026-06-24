@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 190" role="img" aria-labelledby="title">
+  <title id="title">Deadmans Brush logo placeholder</title>
+  <style>
+    text {
+      fill: #c6a06c;
+      font: 500 84px "EB Garamond", Garamond, Georgia, serif;
+      letter-spacing: 2px;
+    }
+  </style>
+  <text x="360" y="120" text-anchor="middle">Deadmans Brush</text>
+</svg>

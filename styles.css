@@ -1,0 +1,82 @@
+:root {
+    color-scheme: dark;
+    --gold: #ba9d7a;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    min-height: 100%;
+    margin: 0;
+}
+
+body {
+    background: #0b0b0a;
+}
+
+.hero {
+    display: grid;
+    min-height: 100vh;
+    min-height: 100svh;
+    place-items: center;
+    padding: clamp(1.5rem, 5vw, 4rem);
+    isolation: isolate;
+    background: linear-gradient(rgb(0 0 0 / 24%), rgb(0 0 0 / 48%)), url("assets/deadmansbrush-background.jpg") center / cover no-repeat;
+}
+
+.hero__content {
+    width: min(88vw, 45rem);
+    text-align: center;
+    transform: translateY(14vh);
+}
+
+.hero__logo {
+    display: block;
+    width: 100%;
+    height: auto;
+    margin-inline: auto;
+}
+
+.hero__tagline {
+    margin: clamp(0.5rem, 1.5vw, 1rem) 0 0;
+    color: var(--gold);
+    font-family: "eb-garamond", "EB Garamond", Garamond, Georgia, serif;
+    font-size: clamp(1rem, 2.6vw, 1.5rem);
+    font-weight: 500;
+    line-height: 1.08;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    text-wrap: balance;
+    text-shadow: 0 2px 12px rgb(0 0 0 / 80%);
+}
+
+.hero__coming-soon {
+    margin: clamp(1rem, 2.5vw, 1.5rem) 0 0;
+    color: rgb(255 255 255 / 72%);
+    font-family: "eb-garamond", "EB Garamond", Garamond, Georgia, serif;
+    font-size: clamp(0.75rem, 1.5vw, 0.9rem);
+    line-height: 1;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    text-shadow: 0 2px 12px rgb(0 0 0 / 80%);
+}
+
+@media (max-width: 36rem) {
+    .hero {
+        background-position: 53% center;
+    }
+    .hero__content {
+        transform: translateY(17vh);
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        scroll-behavior: auto !important;
+    }
+}
